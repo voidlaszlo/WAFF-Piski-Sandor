@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body {
+	margin: 0; padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header > nav.navbar {
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	margin: 20px auto;
+}
+
+header > nav.navbar > img {
+	width: 100px;
+	margin-right: auto;
+	margin-left: 2em;
+}
+
+header > nav.navbar > ul.nav-list {
+	margin-right: 2em;
+}
+
+header > nav.navbar > ul.nav-list > li.nav-list-item {
+	display: inline;
+	text-decoration: none;
+	padding: 1em;
+}
+
+header > nav.navbar > ul.nav-list > li.nav-list-item > a, a:link, a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+header > nav.navbar > ul.nav-list > li.nav-list-item > a:hover {
+	color: lightblue;
+} 
+
+main.container {
+	text-align: center;
+	margin: 4em;
+}
+
+main.container > div.text-container {
+	margin: 3em 7em;
+}
+
+main.container > div.text-container > h2 {
+	margin-bottom: 3px;
+}
+
+main.container > div.text-container > p {
+	font-size: 0.8em;
+}
+
+/* LAPTOP HTML */
+main.container > div.wrapper {
+	display: grid;
+	margin: 4em;
+}
+
+main.container > div.wrapper > div.row {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	background-color: lightgrey;
+}
+
+main.container > div.wrapper > div.row:nth-child(1) {
+	background-color: #eee;
+}
+
+/* ABOUT HTML */
+section.recipes > div.recipe {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 500px;
+	background-color: #f4f4f4;
+	border-radius: 15px;
+	margin: 2em auto;
+}
+
+section.recipes > div.recipe > img {
+	width: 250px;
+	size: cover;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+section.recipes > div.recipe > div.recipe-text  {
+	margin: 0 20px;
+}
+
+
+footer {
+	text-align: center;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 600px) {
+  iframe {
+  	width: 250px;
+  	height: 250px;
+  }
+}

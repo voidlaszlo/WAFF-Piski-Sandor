@@ -1,0 +1,62 @@
+/* # für IDs
+   . für Classes
+*/
+
+body {
+
+	margin: 0; padding: 0;
+
+}
+
+p.p-class {
+	color: brown;
+}
+
+div#unique-div {
+	background-color: grey;
+}
+
+ul.list > li.list-item {
+	margin: 5px;
+}
+
+div {
+
+}
+
+/* USED NTH:CHILD INSTEAD OF CLASS */
+ul.list > li.list-item:nth-child(1) {
+	margin-bottom: 10px;
+	color: red;
+}
+
+.float-test > img {
+	width: 250px;
+}
+
+.float-test > p {
+	background: #eee;
+	background-image: url("asdasd.jpg");
+}
+
+.table-test > table {
+	border: 1px solid black;
+	padding: 1em;
+	margin: 2em auto;
+}
+
+.table-test > table > thead > tr > th {
+	border: 1px solid black;
+	padding: 1em;
+	background-image: url('../img/3.jpg');
+	background-size: cover;
+}
+
+.table-test > table > tbody > tr > td {
+	border: 1px solid black;
+	padding: 1em;
+}
+
+
+
+/* in der mitte */

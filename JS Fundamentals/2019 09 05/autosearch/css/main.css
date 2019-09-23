@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+div.container {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.container input.input {
+  padding-left: 5px;
+  width: 175px;
+  border: 1px solid greenyellow;
+  font-size: 10px;
+  height: 25px;
+}
+
+div.container ul.output {
+  list-style: none;
+}
+
+div.container ul.output li.list-item {
+  width: 175px;
+  margin-top: -10px;
+  margin-bottom: 13px;
+  font-size: 12px;
+}
+
+div.container ul.output li.list-item::before {
+  content: "\25A3";
+  color: greenyellow;
+  margin-right: 5px;
+  size: 10px;
+}
+/*# sourceMappingURL=main.css.map */

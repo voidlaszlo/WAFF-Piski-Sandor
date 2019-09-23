@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+div.playground {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 5px;
+  padding: 1em;
+  width: 75%;
+  margin: 1em auto;
+}
+
+div.playground div.box {
+  border: 1px solid black;
+  text-align: center;
+  padding: 1em;
+  border-radius: 25px;
+}
+
+div.playground div.box:hover {
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+div.playground .marked {
+  background-color: black;
+}
+
+div.playground .character {
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+span#output {
+  color: red;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  div.playground {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*# sourceMappingURL=main.css.map */

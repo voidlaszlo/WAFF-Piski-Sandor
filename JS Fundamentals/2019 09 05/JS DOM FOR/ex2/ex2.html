@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Playground</title>
+    <style>
+        body {
+            margin: 0; padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 16px;
+            text-decoration: underline;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 12px;
+            width: 50%;
+            margin: 0 auto;
+        } 
+
+        div.container {
+            width: 500px;
+            margin: 0 auto;
+            padding: 1em;
+        }
+
+        div.container > .btn {
+            border: 1px solid black;
+            padding: 0.25em 1em;
+            background-color: darkgrey;;
+        }
+
+        div.container > #alertBtn {
+            color: red;
+            border-color: red;
+        }
+
+        div.container > #confirmBtn {
+            color: greenyellow;
+            border-color: greenyellow;
+        }
+
+        div.container > #promptBtn {
+            color: yellow;
+            border-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Exercise 2</h1>
+    <p>Within an html document, create three links and give them the names of the different dialog boxes. Then create an external script in a JavaScript file that runs these three dialog boxes when you click on the links.</p>
+
+    <div class="container">
+        <button class="btn" id="alertBtn">Alert</button>
+        <button class="btn" id="confirmBtn">Confirm</button>
+        <button class="btn" id="promptBtn">Prompt</button>
+    </div>
+
+
+<script src="./app/ex2.js"></script>
+</body>
+</html>

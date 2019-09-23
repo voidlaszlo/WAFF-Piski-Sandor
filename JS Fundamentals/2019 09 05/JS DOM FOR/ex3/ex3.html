@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS &mdash; EXERCISE 3</title>
+    <style>
+        body {
+            margin: 0;padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 16px;
+            text-decoration: underline;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 12px;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        div.container {
+            padding: 1em;
+            width: 500px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.container > p.num {
+            border: 1px solid black;
+            padding: 0.5em;
+            margin: 0 20px;
+            color: red;
+        }
+ 
+     </style>
+</head>
+<body>
+
+    <h1>EXERCISE 3</h1>
+    <p>Write a program that,contains two paragraphs. Have an onmouseover event for both of them, that sets their innerHTML to a new random number each time the event is triggered.
+    <br>
+    On the same mouseover, call a function that compares the two values and displays a message on the page, stating whether the left or right value is higher.</p>
+    <br><hr>
+
+    <div class="container">
+        <p class="num" id="num1">num1</p>
+        <p id="output">x</p>
+        <p class="num" id="num2">num2</p>
+    </div>
+    
+<script src="ex3.js"></script>
+</body>
+</html>

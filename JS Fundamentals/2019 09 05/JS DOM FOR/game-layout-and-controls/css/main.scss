@@ -1,0 +1,39 @@
+body {
+    margin: 0; padding: 0;
+    text-align: center;
+}
+
+div.playground {
+    display: grid;
+    grid-template-columns: repeat(5, 3em);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+
+    div.box {
+        border: 1px solid black;
+        text-align: center;
+        padding: 1em;
+        border-radius: 25px;
+    }
+
+    .attacked {
+        background-color: red;
+    }
+
+    .marked {
+        background-color: lightgrey;
+    }
+
+    .character {
+        color: red;
+        background-color: black;
+    }
+
+    .hitted {
+        color: lightgrey;
+    }
+
+    
+}
