@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contact form</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <form action="mailto:someone@example.com" method="GET" enctype="text/plain">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name">
+            <br>
+            <label for="email">Email</label>
+            <input id="email" type="text" name="email">
+            <br>
+            <label for="male">Male</label>
+            <input id="male" type="radio" name="gender" value="male">
+            <br>
+            <label for="female">Female</label>
+            <input id="female" type="radio" name="gender" value="female">
+            <br>
+            <textarea id="textarea" name="comment" id="" cols="30" rows="10"></textarea>
+            <br>
+            <button id="btn">Send</button>
+            <input type="reset" value="Reset">
+        </form>
+
+        <ul id="output"></ul>
+
+    </div>
+    
+<script src="./app.js"></script>
+</body>
+</html>
